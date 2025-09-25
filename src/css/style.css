@@ -1,0 +1,107 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-width: 300px;
+}
+
+#filtersContainer {
+  display: flex;
+}
+#filters {
+  display: flex;
+}
+.generalButtonsHeader {
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  font-size: 0.9rem;
+}
+.generalButtonsHeader.active {
+  color: white;
+  background-color: #424141;
+}
+
+#containerSearchByName {
+  display: flex;
+  justify-content: space-between;
+}
+
+#inputSearchItem {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#buttonSearchItem {
+  background-color: rgb(20, 18, 17);
+  color: white;
+  border-radius: 0 5px 5px 0;
+
+  padding: 0px 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  #filtersContainer {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  #filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+  }
+  #containerSearchByName {
+    width: 50%;
+    min-width: 270px;
+  }
+  #inputSearchItem {
+    padding: 8px;
+    
+    width: 100%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  #filtersContainer {
+    padding: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #filters {
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 901px) {
+  #filtersContainer {
+    padding: 25px;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-between;
+  }
+  #filters {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-between;
+  }
+  .generalButtonsHeader {
+    min-width: 200px;
+  }
+  #inputSearchItem {
+    width: 100%;
+  }
+  #containerSearchByName {
+    width: 20%;
+  }
+}
