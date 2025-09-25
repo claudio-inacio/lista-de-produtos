@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
     <title>Lista de Produtos</title>
 </head>
 <body>
+    <header id="filtersContainer">
+        <div id="filters">
+            <button id="buttonFullItens" class="generalButtonsHeader">Todos</button>
+            <button id="buttonHortifruti" class="generalButtonsHeader">Hortifruti</button>
+            <button id="buttonLaticinio" class="generalButtonsHeader">Laticinio</button>
+        </div>
+        <div id="containerSearchByName">
+            <input type="text" placeholder="Filtrar Por Nome" id="inputSearchItem">
+        </div>
+    </header>
 
-
-    
+    <script src="src/js/script.js"></script>
 </body>
 </html>
