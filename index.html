@@ -1,118 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <title>Lista de Produtos</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="filtersContainer">
-        <div id="filters">
-            <button id="buttonFullItens" class="generalButtonsHeader">Todos</button>
-            <button id="buttonHortifruti" class="generalButtonsHeader">Hortifruti</button>
-            <button id="buttonLaticinio" class="generalButtonsHeader">Laticinio</button>
-        </div>
-        <div id="containerSearchByName">
-            <input type="text" placeholder="Filtrar Por Nome" id="inputSearchItem">
-        </div>
+      <div id="filters">
+        <button id="buttonFullItens" class="generalButtonsHeader">Todos</button>
+        <button id="buttonHortifruti" class="generalButtonsHeader">
+          Hortifruti
+        </button>
+        <button id="buttonLaticinio" class="generalButtonsHeader">
+          Laticinio
+        </button>
+      </div>
+      <div id="containerSearchByName">
+        <input
+          type="text"
+          placeholder="Filtrar Por Nome"
+          id="inputSearchItem"
+        />
+      </div>
     </header>
     <main>
-        <div id="containerListProducts">
-            <ul id="productList">
-                <li class="productItem">
-
-                    <h3>
-                        Banana
-                    </h3>
-                    <h5>Hortifruti</h5>
-                        <img class="apresentationImage" src="./src/img/banana.png" alt="Banana" />
-                        <p>R$ 2,00</p>
-                        <ul id="benefits">
-                            <li> Potássio</li>
-                            <li> Vitamina B6</li>
-                            <li> Vitamina C</ç>
-                            <li> Folatos</li>
-                            <button id="addItemCar">Add Carrinho</button>
-                        </ul>
-                    
-                </li>
-                <li class="productItem">
-
-                    <h3>
-                        Banana
-                    </h3>
-                    <h5>Hortifruti</h5>
-                        <img src="./src/img/banana.png" alt="Banana" />
-                        <p>R$ 2,00</p>
-                        <ul id="benefits">
-                            <li> Potássio</li>
-                            <li> Vitamina B6</li>
-                            <li> Vitamina C</ç>
-                            <li> Folatos</li>
-                            <button id="addItemCar">Add Carrinho</button>
-                        </ul>
-                    
-                </li>
-                <li class="productItem">
-
-                    <h3>
-                        Banana
-                    </h3>
-                    <h5>Hortifruti</h5>
-                        <img src="./src/img/banana.png" alt="Banana" />
-                        <p>R$ 2,00</p>
-                        <ul id="benefits">
-                            <li> Potássio</li>
-                            <li> Vitamina B6</li>
-                            <li> Vitamina C</ç>
-                            <li> Folatos</li>
-                            <button id="addItemCar">Add Carrinho</button>
-                        </ul>
-                    
-                </li>
-                <li class="productItem">
-
-                    <h3>
-                        Banana
-                    </h3>
-                    <h5>Hortifruti</h5>
-                        <img src="./src/img/banana.png" alt="Banana" />
-                        <p>R$ 2,00</p>
-                        <ul id="benefits">
-                            <li> Potássio</li>
-                            <li> Vitamina B6</li>
-                            <li> Vitamina C</ç>
-                            <li> Folatos</li>
-                            <button id="addItemCar">Add Carrinho</button>
-                        </ul>
-                    
-                </li>
-                <li class="productItem">
-
-                    <h3>
-                        Banana
-                    </h3>
-                    <h5>Hortifruti</h5>
-                        <img src="./src/img/banana.png" alt="Banana" />
-                        <p>R$ 2,00</p>
-                        <ul id="benefits">
-                            <li> Potássio</li>
-                            <li> Vitamina B6</li>
-                            <li> Vitamina C</ç>
-                            <li> Folatos</li>
-                            <button id="addItemCar">Add Carrinho</button>
-                        </ul>
-                    
-                </li>
-
-
-      
+      <div id="containerListProducts">
+        <ul id="productList">
+          <li class="productItem">
+            <h3>Banana</h3>
+            <h5>Hortifruti</h5>
+            <img
+              class="apresentationImage"
+              src="./src/img/banana.png"
+              alt="Banana"
+            />
+            <p>R$ 2,00</p>
+            <ul id="benefits">
+              <li>Potássio</li>
+              <li>Vitamina B6</li>
+              <li>Vitamina C</li>
+              <li>Folatos</li>
+              <button id="addItemCar">Add Carrinho</button>
             </ul>
-        </div>
+          </li>
+          <li class="productItem">
+            <h3>Banana</h3>
+            <h5>Hortifruti</h5>
+            <img src="./src/img/banana.png" alt="Banana" />
+            <p>R$ 2,00</p>
+            <ul id="benefits">
+              <li>Potássio</li>
+              <li>Vitamina B6</li>
+              <li>Vitamina C</li>
+              <li>Folatos</li>
+              <button id="addItemCar">Add Carrinho</button>
+            </ul>
+          </li>
+          <li class="productItem">
+            <h3>Banana</h3>
+            <h5>Hortifruti</h5>
+            <img src="./src/img/banana.png" alt="Banana" />
+            <p>R$ 2,00</p>
+            <ul id="benefits">
+              <li>Potássio</li>
+              <li>Vitamina B6</li>
+              <li>Vitamina C</li>
+              <li>Folatos</li>
+              <button id="addItemCar">Add Carrinho</button>
+            </ul>
+          </li>
+          <li class="productItem">
+            <h3>Banana</h3>
+            <h5>Hortifruti</h5>
+            <img src="./src/img/banana.png" alt="Banana" />
+            <p>R$ 2,00</p>
+            <ul id="benefits">
+              <li>Potássio</li>
+              <li>Vitamina B6</li>
+              <li>Vitamina C</li>
+              <li>Folatos</li>
+              <button id="addItemCar">Add Carrinho</button>
+            </ul>
+          </li>
+          <li class="productItem">
+            <h3>Banana</h3>
+            <h5>Hortifruti</h5>
+            <img src="./src/img/banana.png" alt="Banana" />
+            <p>R$ 2,00</p>
+            <ul id="benefits">
+              <li>Potássio</li>
+              <li>Vitamina B6</li>
+              <li>Vitamina C</li>
+              <li>Folatos</li>
+              <button id="addItemCar">Add Carrinho</button>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </main>
+    <aside class="cart">
+      <div id="containerProductsCart">
+        <ul class="ListproductsCart">
+            <h3>
+                Carrinho de Produtos
+
+            </h3>
+          <li>
+            <div class="cartItem">
+              <img class="item-thumb" src="./src/img/banana.png" alt="Banana" />
+              <div class="item-info">
+                <div class="item-name">Produto A</div>
+                <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cartItem">
+              <img class="item-thumb" src="./src/img/banana.png" alt="Banana" />
+              <div class="item-info">
+                <div class="item-name">Produto A</div>
+                <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cartItem">
+              <img class="item-thumb" src="./src/img/banana.png" alt="Banana" />
+              <div class="item-info">
+                <div class="item-name">Produto A</div>
+                <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cartItem">
+              <img class="item-thumb" src="./src/img/banana.png" alt="Banana" />
+              <div class="item-info">
+                <div class="item-name">Produto A</div>
+                <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cartItem">
+              <img class="item-thumb" src="./src/img/banana.png" alt="Banana" />
+              <div class="item-info">
+                <div class="item-name">Produto A</div>
+                <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="cartItem">
+              <img class="item-thumb" src="./src/img/banana.png" alt="Banana" />
+              <div class="item-info">
+                <div class="item-name">Produto A</div>
+                <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
+              </div>
+            </div>
+            <div>
+                <button>remover</button>
+            </div>
+          </li>
+        </ul>
+
+        <div class="ContainerTotalPrice">
+          <h1>Carrinho de produtos</h1>
+          <p>Preço total: R$<span id="precoTotal">00.00</span></p>
+        </div>
+      </div>
+    </aside>
+    <button
+      class="cartButton"
+      aria-label="abrir carrinho"
+      id="ButtonOpenProdcutsCart"
+    >
+      <svg
+        class="cart-icon"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          d="M7 4h-2l-1 2H2v2h1l3.6 7.59-1.35 2.44A1 1 0 0 0 6 19h12v-2H6.42c.03-.03.05-.07.08-.11L8.1 14h7.45a1 1 0 0 0 .92-.63l2.38-6.02A1 1 0 0 0 18.9 5H6.21L7 4z"
+        />
+        <circle cx="10" cy="21" r="1" />
+        <circle cx="18" cy="21" r="1" />
+      </svg>
+      <span class="cart-badge" id="cartBadge">3</span>
+    </button>
+    <div
+      class="modalContainer"
+      id="modalCartProducts"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="tituloCarrinhoProdutos"
+    >
+      <div class="modal" role="document">
+        <div class="modalHeader">
+          <div>
+            <div id="cartTitle" class="modalTitle">Carrinho de Produtos</div>
+            <div style="font-size: 13px; color: #666">3 itens</div>
+          </div>
+          <div>
+            <button class="close-btn" id="closeModal" aria-label="Fechar">
+              ✕
+            </button>
+          </div>
+        </div>
+
+        <div class="modalBody" id="cartBody">
+          <div class="cartItem">
+            <img class="item-thumb" src="./src/img/banana.png" alt="Banana" />
+            <div class="item-info">
+              <div class="item-name">Produto A</div>
+              <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
+            </div>
+          </div>
+          <div class="cartItem">
+            <img class="item-thumb" src="./src/img/leite.png" alt="Banana" />
+            <div class="item-info">
+              <div class="item-name">Produto A</div>
+              <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
+            </div>
+          </div>
+          <div class="cartItem">
+            <img class="item-thumb" src="./src/img/maca.png" alt="Banana" />
+            <div class="item-info">
+              <div class="item-name">Produto A</div>
+              <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
+            </div>
+          </div>
+          <div class="cartItem">
+            <img class="item-thumb" src="./src/img/morango.png" alt="Banana" />
+            <div class="item-info">
+              <div class="item-name">Produto A</div>
+              <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
+            </div>
+          </div>
+          <div class="cartItem">
+            <img class="item-thumb" src="./src/img/pao.png" alt="Banana" />
+            <div class="item-info">
+              <div class="item-name">Produto A</div>
+              <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modalFooter">
+          <div class="total">Total: R$ 124,70</div>
+          <div style="display: flex; gap: 8px">
+            <button class="btn-secondary" id="continueShopping">
+              Continuar comprando
+            </button>
+            <button class="btn-primary" id="checkout">Finalizar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="src/js/script.js"></script>
-</body>
+  </body>
 </html>
