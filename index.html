@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
     <title>Lista de Produtos</title>
   </head>
   <body>
@@ -37,6 +38,19 @@
               src="./src/img/banana.png"
               alt="Banana"
             />
+            <p>R$ 8,00</p>
+            <ul id="benefits">
+              <li>Potássio</li>
+              <li>Vitamina B6</li>
+              <li>Vitamina C</li>
+              <li>Folatos</li>
+              <button id="addItemCar">Add Carrinho</button>
+            </ul>
+          </li>
+          <!-- <li class="productItem">
+            <h3>Banana</h3>
+            <h5>Hortifruti</h5>
+            <img src="./src/img/leite.png" alt="Banana" />
             <p>R$ 2,00</p>
             <ul id="benefits">
               <li>Potássio</li>
@@ -84,36 +98,55 @@
               <li>Folatos</li>
               <button id="addItemCar">Add Carrinho</button>
             </ul>
-          </li>
-          <li class="productItem">
-            <h3>Banana</h3>
-            <h5>Hortifruti</h5>
-            <img src="./src/img/banana.png" alt="Banana" />
-            <p>R$ 2,00</p>
-            <ul id="benefits">
-              <li>Potássio</li>
-              <li>Vitamina B6</li>
-              <li>Vitamina C</li>
-              <li>Folatos</li>
-              <button id="addItemCar">Add Carrinho</button>
-            </ul>
-          </li>
+          </li> -->
         </ul>
       </div>
     </main>
     <aside class="cart">
       <div id="containerProductsCart">
         <ul class="ListproductsCart">
-            <h3>
-                Carrinho de Produtos
+          <h1>Carrinho de produtos</h1>
+          <li class="listProductCartItem">
+            <div id="deletItemCart">
+              <i class="trashIcon" data-lucide="trash-2"></i>
+            </div>
+            <div class="cartItem">
+              <img class="item-thumb" src="./src/img/banana.png" alt="Banana" />
+              <div class="item-info">
+                <div class="item-name">Produto A</div>
+                <div class="item-meta">R$ 49,90</div>
+              </div>
+              <div id="incrementItemComponent">
+                <button>-</button>
+                <p>5</p>
+                <button>+</button>
+              </div>
+            </div>
+          </li>
+          <li class="listProductCartItem">
+            <div id="deletItemCart">
+              <i class="trashIcon" data-lucide="trash-2"></i>
+            </div>
+            <div class="cartItem">
+              <img class="item-thumb" src="./src/img/leite.png" alt="Leite" />
+              <div class="item-info">
+                <div class="item-name">Produto A</div>
+                <div class="item-meta">R$ 49,90</div>
+              </div>
+              <div id="incrementItemComponent">
+                <button>-</button>
+                <p>5</p>
+                <button>+</button>
+              </div>
+            </div>
+          </li>
 
-            </h3>
-          <li>
+          <!-- <li>
             <div class="cartItem">
               <img class="item-thumb" src="./src/img/banana.png" alt="Banana" />
               <div class="item-info">
                 <div class="item-name">Produto A</div>
-                <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
+                <div class="item-meta">R$ 49,90</div>
               </div>
             </div>
           </li>
@@ -122,7 +155,7 @@
               <img class="item-thumb" src="./src/img/banana.png" alt="Banana" />
               <div class="item-info">
                 <div class="item-name">Produto A</div>
-                <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
+                <div class="item-meta">R$ 49,90</div>
               </div>
             </div>
           </li>
@@ -131,7 +164,7 @@
               <img class="item-thumb" src="./src/img/banana.png" alt="Banana" />
               <div class="item-info">
                 <div class="item-name">Produto A</div>
-                <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
+                <div class="item-meta">R$ 49,90</div>
               </div>
             </div>
           </li>
@@ -140,36 +173,14 @@
               <img class="item-thumb" src="./src/img/banana.png" alt="Banana" />
               <div class="item-info">
                 <div class="item-name">Produto A</div>
-                <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
+                <div class="item-meta">R$ 49,90</div>
               </div>
             </div>
-          </li>
-          <li>
-            <div class="cartItem">
-              <img class="item-thumb" src="./src/img/banana.png" alt="Banana" />
-              <div class="item-info">
-                <div class="item-name">Produto A</div>
-                <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="cartItem">
-              <img class="item-thumb" src="./src/img/banana.png" alt="Banana" />
-              <div class="item-info">
-                <div class="item-name">Produto A</div>
-                <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
-              </div>
-            </div>
-            <div>
-                <button>remover</button>
-            </div>
-          </li>
+          </li> -->
         </ul>
 
         <div class="ContainerTotalPrice">
-          <h1>Carrinho de produtos</h1>
-          <p>Preço total: R$<span id="precoTotal">00.00</span></p>
+          <p>total: R$<span id="precoTotal">00.00</span></p>
         </div>
       </div>
     </aside>
@@ -213,41 +224,118 @@
         </div>
 
         <div class="modalBody" id="cartBody">
+          <ul class="ListproductsCart">
+            <li class="listProductCartItemModal">
+              <div id="deletItemCart">
+                <i class="trashIcon" data-lucide="trash-2"></i>
+              </div>
+              <div class="cartItemModal">
+                <div class="itemInfoModal">
+                  <img
+                    class="item-thumb"
+                    src="./src/img/banana.png"
+                    alt="Banana"
+                  />
+                  <div class="itemDetailModal">
+                    <div class="item-name">Produto A</div>
+                    <div class="item-meta">R$ 49,90</div>
+                  </div>
+                </div>
+                <div id="incrementItemComponent">
+                  <button>-</button>
+                  <p>5</p>
+                  <button>+</button>
+                </div>
+              </div>
+            </li>
+            <!-- <li class="listProductCartItemModal">
+              <div id="deletItemCart">
+                <i class="trashIcon" data-lucide="trash-2"></i>
+              </div>
+              <div class="cartItemModal">
+                <div class="itemInfoModal">
+                  <img
+                    class="item-thumb"
+                    src="./src/img/leite.png"
+                    alt="Banana"
+                  />
+                  <div class="itemDetailModal">
+                    <div class="item-name">Produto A</div>
+                    <div class="item-meta">R$ 49,90</div>
+                  </div>
+                </div>
+                <div id="incrementItemComponent">
+                  <button>-</button>
+                  <p>5</p>
+                  <button>+</button>
+                </div>
+              </div>
+            </li>
+            <li class="listProductCartItem">
+              <div id="deletItemCart">
+                <i class="trashIcon" data-lucide="trash-2"></i>
+              </div>
+              <div class="cartItem">
+                <img class="item-thumb" src="./src/img/maca.png" alt="Banana" />
+                <div class="item-info">
+                  <div class="item-name">Produto A</div>
+                  <div class="item-meta">R$ 49,90</div>
+                </div>
+                <div id="incrementItemComponent">
+                  <button>-</button>
+                  <p>5</p>
+                  <button>+</button>
+                </div>
+              </div>
+            </li>
+            <li class="listProductCartItem">
+              <div id="deletItemCart">
+                <i class="trashIcon" data-lucide="trash-2"></i>
+              </div>
+              <div class="cartItem">
+                <img
+                  class="item-thumb"
+                  src="./src/img/morango.png"
+                  alt="Banana"
+                />
+                <div class="item-info">
+                  <div class="item-name">Produto A</div>
+                  <div class="item-meta">R$ 49,90</div>
+                </div>
+
+                <div id="incrementItemComponent">
+                  <button>-</button>
+                  <p>5</p>
+                  <button>+</button>
+                </div>
+              </div>
+            </li>
+            <li class="listProductCartItem">
+              <div id="deletItemCart">
+                <i class="trashIcon" data-lucide="trash-2"></i>
+              </div>
+              <div class="cartItem">
+                <img class="item-thumb" src="./src/img/pao.png" alt="Banana" />
+                <div class="item-info">
+                  <div class="item-name">Produto A</div>
+                  <div class="item-meta">R$ 49,90</div>
+                </div>
+                <div id="incrementItemComponent">
+                  <button>-</button>
+                  <p>5</p>
+                  <button>+</button>
+                </div>
+              </div>
+            </li> -->
+          </ul>
+          <!-- 
+
+   
+          
+    
           <div class="cartItem">
-            <img class="item-thumb" src="./src/img/banana.png" alt="Banana" />
-            <div class="item-info">
-              <div class="item-name">Produto A</div>
-              <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
-            </div>
-          </div>
-          <div class="cartItem">
-            <img class="item-thumb" src="./src/img/leite.png" alt="Banana" />
-            <div class="item-info">
-              <div class="item-name">Produto A</div>
-              <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
-            </div>
-          </div>
-          <div class="cartItem">
-            <img class="item-thumb" src="./src/img/maca.png" alt="Banana" />
-            <div class="item-info">
-              <div class="item-name">Produto A</div>
-              <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
-            </div>
-          </div>
-          <div class="cartItem">
-            <img class="item-thumb" src="./src/img/morango.png" alt="Banana" />
-            <div class="item-info">
-              <div class="item-name">Produto A</div>
-              <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
-            </div>
-          </div>
-          <div class="cartItem">
-            <img class="item-thumb" src="./src/img/pao.png" alt="Banana" />
-            <div class="item-info">
-              <div class="item-name">Produto A</div>
-              <div class="item-meta">Quantidade: 1 — R$ 49,90</div>
-            </div>
-          </div>
+           
+          </div> -->
         </div>
 
         <div class="modalFooter">
@@ -263,5 +351,9 @@
     </div>
 
     <script src="src/js/script.js"></script>
+    <script src="src/js/script.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
